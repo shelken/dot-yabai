@@ -19,10 +19,10 @@ ctrl + alt - return : yabai -m window --toggle zoom-parent
 ctrl + alt - l : yabai -m window --toggle split
 
 # 调整窗口大小
-cmd - left : yabai -m window --resize left:-50:0; yabai -m window --resize right:-50:0
-cmd - down : yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50
-cmd - up : yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50
-cmd - right : yabai -m window --resize right:50:0; yabai -m window --resize left:50:0
+cmd + shift - left : yabai -m window --resize left:-50:0; yabai -m window --resize right:-50:0
+cmd + shift - down : yabai -m window --resize bottom:0:50; yabai -m window --resize top:0:50
+cmd + shift - up : yabai -m window --resize top:0:-50; yabai -m window --resize bottom:0:-50
+cmd + shift - right : yabai -m window --resize right:50:0; yabai -m window --resize left:50:0
 
 # space
 

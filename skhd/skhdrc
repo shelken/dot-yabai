@@ -16,7 +16,7 @@ ctrl + alt + cmd - up : yabai -m window --resize top:0:-50; yabai -m window --re
 ctrl + alt + cmd - right : yabai -m window --resize right:50:0; yabai -m window --resize left:50:0
 
 # 切换窗口水平垂直
-ctrl + shift - l : yabai -m window --toggle split
+alt + ctrl - l : yabai -m window --toggle split
 
 # 全屏
 ctrl + alt - return : yabai -m window --toggle zoom-parent

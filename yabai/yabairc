@@ -46,6 +46,9 @@ yabai -m rule --add app="^(System Settings|系统设置|IntelliJ IDEA)" manage=o
 # 窗口聚焦闪烁
 # yabai -m signal --add label="flash_focus" event="window_focused" action="yabai -m window \$YABAI_WINDOW_ID --opacity 0.1 && sleep $(yabai -m config window_opacity_duration) && yabai -m window \$YABAI_WINDOW_ID --opacity 0.0"
 # sip 需要关闭
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# boarders
+borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0 &
 
 echo "yabai configuration loaded.."

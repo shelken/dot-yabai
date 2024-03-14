@@ -41,8 +41,23 @@ yabai -m config                                 \
     mouse_action2                resize         \
     mouse_drop_action            swap
 
-yabai -m rule --add app="^(System Settings|System Preferences|系统设置|系统偏好设置|IntelliJ IDEA)" manage=off layer=normal
-# yabai -m rule --add app="^(IntelliJ IDEA)$" title="提交更改" manage=off layer=normal
+# yabai -m rule --add app="^(System Settings|System Preferences|系统设置|系统偏好设置|IntelliJ IDEA)$" manage=off layer=normal
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^系统设置$" manage=off
+yabai -m rule --add app="^系统偏好设置$" manage=off
+yabai -m rule --add app="^IntelliJ IDEA$" manage=off
+
+# float system preferences
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add title='Preferences$' manage=off
+yabai -m rule --add title='^Archive Utility$' manage=off
+
+# float settings windows
+yabai -m rule --add title='Settings$' manage=off
+
+
 # 窗口聚焦闪烁
 # yabai -m signal --add label="flash_focus" event="window_focused" action="yabai -m window \$YABAI_WINDOW_ID --opacity 0.1 && sleep $(yabai -m config window_opacity_duration) && yabai -m window \$YABAI_WINDOW_ID --opacity 0.0"
 # sip 需要关闭

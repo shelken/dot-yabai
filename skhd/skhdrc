@@ -1,3 +1,10 @@
+# blacklist
+
+.blacklist [
+   "Screen Sharing" 
+   "VNC Viewer"
+]
+
 # focus window
 # alt - h : yabai -m window --focus west
 # alt - j : yabai -m window --focus south

@@ -9,3 +9,6 @@ ln:
 
 restart:
   @yabai --restart-service
+reload:
+  @yabai --restart-service
+  @skhd --reload

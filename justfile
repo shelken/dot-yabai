@@ -6,3 +6,6 @@ ln:
   @rm -rf ~/.config/skhd
   @ln -sf {{justfile_directory()}}/yabai ~/.config/yabai
   @ln -sf {{justfile_directory()}}/skhd ~/.config/skhd
+
+restart:
+  @yabai --restart-service

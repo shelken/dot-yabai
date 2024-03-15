@@ -48,26 +48,26 @@ cmd + shift - right : yabai -m window --resize right:50:0; yabai -m window --res
 # alt - 9 : yabai -m space --focus 9
 
 # switch space
-:: ss1 @ : yabai -m query --spaces --space 1 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss2 @ : yabai -m query --spaces --space 2 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss3 @ : yabai -m query --spaces --space 3 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss4 @ : yabai -m query --spaces --space 4 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss5 @ : yabai -m query --spaces --space 5 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss6 @ : yabai -m query --spaces --space 6 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss7 @ : yabai -m query --spaces --space 7 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss8 @ : yabai -m query --spaces --space 8 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
-:: ss9 @ : yabai -m query --spaces --space 9 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 1 : yabai -m query --spaces --space 1 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 2 : yabai -m query --spaces --space 2 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 3 : yabai -m query --spaces --space 3 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 4 : yabai -m query --spaces --space 4 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 5 : yabai -m query --spaces --space 5 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 6 : yabai -m query --spaces --space 6 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 7 : yabai -m query --spaces --space 7 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 8 : yabai -m query --spaces --space 8 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+alt - 9 : yabai -m query --spaces --space 9 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
 
 # 无关闭 sip 时使用
-alt - 1 ; ss1
-alt - 2 ; ss2
-alt - 3 ; ss3
-alt - 4 ; ss4
-alt - 5 ; ss5
-alt - 6 ; ss6
-alt - 7 ; ss7
-alt - 8 ; ss8
-alt - 9 ; ss9
+# alt - 1 ; ss1
+# alt - 2 ; ss2
+# alt - 3 ; ss3
+# alt - 4 ; ss4
+# alt - 5 ; ss5
+# alt - 6 ; ss6
+# alt - 7 ; ss7
+# alt - 8 ; ss8
+# alt - 9 ; ss9
 
 # 关闭当前桌面
 # cmd + alt - w : yabai -m space --destroy

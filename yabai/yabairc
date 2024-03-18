@@ -44,6 +44,7 @@ yabai -m config                                 \
 yabai -m rule --add app="^IntelliJ IDEA$" manage=off
 yabai -m rule --add app="^OpenAI Translator$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Screen Sharing$" manage=off
 
 # float system preferences
 yabai -m rule --add app="^系统设置$" manage=off
